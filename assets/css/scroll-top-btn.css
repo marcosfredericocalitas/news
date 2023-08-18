@@ -1,0 +1,40 @@
+.scroll-top {
+    position: fixed;
+    bottom: 50px;
+    right: 40px;
+    z-index: 1;
+}
+
+.scroll-top__btn {
+    --btn-dimention: 60px;
+    --btn-top-bg: rgba(0, 0, 0, 0.400);
+    width: var(--btn-dimention);
+    height: var(--btn-dimention);
+    font-size: 21px;
+    border-radius: 100px;
+    background-color: var(--btn-top-bg);
+    transition: var(--hover-transition);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 300ms ease-in-out;
+}
+
+.scroll-top__btn.is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media (max-width: 1050px) {
+    .scroll-top {
+        right: 20px;
+    }
+}
+
+@media (max-width: 585px) {
+    .scroll-top__btn {
+        --btn-dimention: 50px;
+        width: var(--btn-dimention);
+        height: var(--btn-dimention);
+        font-size: 20px;
+    }
+}

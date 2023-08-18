@@ -1,0 +1,127 @@
+:root {
+    --footer-title-font-size: 25px;
+}
+
+.c-footer {
+    margin-top: 290px;
+    width: 100%;
+}
+
+.c-footer__wrapper-top {
+    padding: 50px 150px;
+    background-color: var(--footer-bg-color);
+    align-items: baseline;
+}
+
+/* About */
+.c-about__title {
+    font-size: var(--footer-title-font-size);
+}
+
+.c-about__logo {
+    --logo-dimention: 135px;
+    width: var(--logo-dimention);
+    height: var(--logo-dimention);
+}
+
+.c-about__info {
+    font-weight: bolder;
+    font-size: 17px;
+}
+
+/* Footer menu */
+.c-menu__title {
+    font-size: var(--footer-title-font-size);
+}
+
+.c-menu__list--footer {
+    --footer-menu-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--footer-menu-gap);
+}
+
+.c-menu__link--footer {
+    width: 100%;
+    padding: 8px;
+}
+
+.c-menu__link--footer:hover,
+/* Navegation */
+.c-menu__link--location:hover {
+    color: var(--primary-color);
+}
+
+.c-menu__link--location {
+    gap: 15px;
+    word-break: break-all;
+}
+
+.c-menu__icon {
+    font-size: 18px;
+}
+
+/* Followe us */
+.c-menu__link--footer-s-media {
+    gap: 8px;
+}
+
+.c-menu__link--footer-s-media:hover {
+    color: var(--primary-color);
+}
+
+.c-menu__icon-s-media {
+    font-size: 20px;
+}
+
+.c-footer__wrapper-bottom {
+    justify-content: center;
+    padding: 30px 0px;
+    background-color: var(--footer-bg-color2);
+}
+
+.c-footer__copyrigh {
+    text-align: center;
+}
+
+@media (max-width: 1250px) {
+    .c-footer {
+        margin-top: 100px;
+        width: 100%;
+    }
+
+    .c-footer__wrapper-top {
+        flex-wrap: wrap;
+        padding: 80px 50px;
+    }
+
+    .c-footer__wrapper-top {
+        gap: 50px;
+    }
+
+    .c-menu--footer-s-media {
+        flex-grow: 0.2;
+    }
+}
+
+@media(max-width: 1050px) {
+    .c-footer__wrapper-top {
+        padding: 50px 20px;
+    }
+
+    .c-footer__wrapper-bottom {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 665px) {
+    .c-footer__wrapper-top {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 250px) {
+    .c-menu__list--footer {
+        grid-template-columns: 1fr;
+    }
+}

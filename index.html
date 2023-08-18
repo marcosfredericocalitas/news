@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/mixers.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/news-card.css">
+    <link rel="stylesheet" href="assets/css/scroll-top-btn.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/icons/All/all.min.css">
+    <link rel="shortcut icon" href="assets/img/Logitipo.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <header class="c-navbar">
+        <div class="navbar__wrapper" id="navbar">
+            <!-- Top navbar -->
+            <div class="navbar__top u-d-flex-between" id="top-navbar">
+                <!-- Navbar logo -->
+                <div class="navbar__logo">
+                    <a href="#">
+                        <img src="assets/img/Logitipo.png" alt="" class="u-img navbar__img">
+                    </a>
+                </div>
+
+                <!-- Social media menu -->
+                <nav class="c-menu">
+                    <ul class="c-menu__list c-menu__list--top u-d-flex-between">
+                        <li class="c-menu__item">
+                            <a href="#" class="c-menu__link c-menu__link--top u-link-facebook">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="c-menu__item">
+                            <a href="#" class="c-menu__link c-menu__link--top">
+                                <i class="fa-brands fa-square-whatsapp u-link-whatsapp"></i>
+                            </a>
+                        </li>
+                        <li class="c-menu__item">
+                            <a href="#" class="c-menu__link c-menu__link--top">
+                                <i class="fa-brands fa-youtube u-link-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Button Mobile -->
+                <div class="mobile">
+                    <button type="button" class="mobile__btn" id="btn-mobile">
+                        <span class="mobile__icon" id="open-menu-icon"><i class="fa-solid fa-bars"></i></span>
+                        <span class="mobile__icon is-none" id="close-menu-icon">
+                            <i class="fa-solid fa-xmark"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Bottom navbar -->
+            <div class="navbar__bottom u-d-flex-between" id="bottom-navbar">
+                <!-- Navegation menu -->
+                <nav class="c-menu c-menu--bottom" id="menu-mobile">
+                    <ul class="c-menu__list c-menu__list--bottom u-d-flex-between" id="menu-mobile-wrapper">
+                        <li class="c-menu__item c-menu__item--bottom">
+                            <a href="#"
+                                class="c-menu__link c-menu__link--bottom c-menu__link--active u-btn-hover u-d-flex-between">
+                                Home
+                                <span class="c-menu__arrow">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="c-menu__item c-menu__item--bottom">
+                            <a href="#" class="c-menu__link c-menu__link--bottom u-btn-hover u-d-flex-between">
+                                Diversos
+                                <span class="c-menu__arrow">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="c-menu__item c-menu__item--bottom">
+                            <a href="#" class="c-menu__link c-menu__link--bottom u-btn-hover u-d-flex-between">
+                                Sobre
+                                <span class="c-menu__arrow">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="c-menu__item c-menu__item--bottom">
+                            <a href="#" class="c-menu__link c-menu__link--bottom u-btn-hover u-d-flex-between">
+                                Cursos
+                                <span class="c-menu__arrow">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="c-menu__item c-menu__item--bottom">
+                            <a href="#" class="c-menu__link c-menu__link--bottom u-btn-hover u-d-flex-between">
+                                Contactos
+                                <span class="c-menu__arrow">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Search area -->
+                <form action="" method="get" class="c-form c-form__navbar" id="menu-search">
+                    <input type="search" name="" id="" class="c-form__input u-focus-input" placeholder="Pesquisar">
+                    <button type="submit" class="c-form__btn c-form__btn--black u-btn-hover">
+                        <span class="c-form__icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-content u-d-flex-column" id="main-content">
+            <!-- Featured news -->
+            <section class="featured__news u-d-flex">
+                <div class="slider u-overflow">
+                    <div class="slider__wrapper">
+                        <!-- Slider radio -->
+                        <input type="radio" name="btn-radio" id="radio1" class="slider__radio slider__radio--fisrt"
+                            checked>
+                        <input type="radio" name="btn-radio" id="radio2" class="slider__radio slider__radio--second">
+                        <input type="radio" name="btn-radio" id="radio3" class="slider__radio slider__radio--third">
+
+                        <!-- Slider news -->
+                        <article class="slider__news u-shadow">
+                            <a href="#" class="slider__image">
+                                <img src="assets/img/teste3.jpg" alt="Imagem da noticia" class="u-img slider__img">
+                            </a>
+                            <!-- Slider news body -->
+                            <div class="slider__body u-body">
+                                <a href="#" class="slider__category u-category u-white">
+                                    <i class="fa-solid fa-circle slider__icon u-icon-small"></i>Cultura
+                                </a>
+                                <h1 class="slider__title u-title u-text-overflow u-line-clamp2">
+                                    <a href="#" class="u-white">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime! Lorem
+                                        ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime!
+                                    </a>
+                                </h1>
+                                <p class="slider__description u-text-overflow u-line-clamp2">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt,
+                                    aspernatur tenetur, repellendus laudantium, ipsum beatae vero nam fuga.
+                                </p>
+                            </div>
+                        </article>
+
+                        <!-- Slider news -->
+                        <article class="slider__news u-shadow">
+                            <a href="#" class="slider__image">
+                                <img src="assets/img/teste3.jpg" alt="Imagem da noticia" class="u-img slider__img">
+                            </a>
+                            <!-- Slider news body -->
+                            <div class="slider__body u-body">
+                                <a href="#" class="slider__category u-category u-white">
+                                    <i class="fa-solid fa-circle slider__icon u-icon-small"></i>Cultura
+                                </a>
+                                <h1 class="slider__title u-title u-text-overflow u-line-clamp2">
+                                    <a href="#" class="u-white">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime! Lorem
+                                        ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime!
+                                    </a>
+                                </h1>
+                                <p class="slider__description u-text-overflow u-line-clamp2">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt,
+                                    aspernatur tenetur, repellendus laudantium, ipsum beatae vero nam fuga.
+                                </p>
+                            </div>
+                        </article>
+
+                        <!-- Slider news -->
+                        <article class="slider__news u-shadow">
+                            <a href="#" class="slider__image">
+                                <img src="assets/img/teste3.jpg" alt="Imagem da noticia" class="u-img slider__img">
+                            </a>
+                            <!-- Slider news body -->
+                            <div class="slider__body u-body">
+                                <a href="#" class="slider__category u-category u-white">
+                                    <i class="fa-solid fa-circle slider__icon u-icon-small"></i>Cultura
+                                </a>
+                                <h1 class="slider__title u-title u-text-overflow u-line-clamp2">
+                                    <a href="#" class="u-white">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime! Lorem
+                                        ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime!
+                                    </a>
+                                </h1>
+                                <p class="slider__description u-text-overflow u-line-clamp2">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt,
+                                    aspernatur tenetur, repellendus laudantium, ipsum beatae vero nam fuga.
+                                </p>
+                            </div>
+                        </article>
+
+                        <!-- slider navegation auto -->
+                        <div class="slider__navegation slider__navegation--auto">
+                            <span class="slider__btn slider__btn--auto1"></span>
+                            <span class="slider__btn slider__btn--auto2"></span>
+                            <span class="slider__btn slider__btn--auto3"></span>
+                        </div>
+                    </div>
+
+                    <!-- slider navegation manual -->
+                    <div class="slider__navegation slider__navegation--manual">
+                        <label for="radio1" class="slider__btn slider__btn--manual"></label>
+                        <label for="radio2" class="slider__btn slider__btn--manual"></label>
+                        <label for="radio3" class="slider__btn slider__btn--manual"></label>
+                    </div>
+                </div>
+
+                <div class="top-news">
+                    <!-- Top news -->
+                    <article class="top-news__wrapper u-shadow u-overflow">
+                        <a href="#" class="top-news__image">
+                            <img src="assets/img/teste3.jpg" alt="Imagem da noticia" class="u-img top-news__img">
+                        </a>
+                        <!-- Top news body -->
+                        <div class="top-news__body u-body">
+                            <a href="#" class="top-news__category u-category u-white">
+                                <i class="fa-solid fa-circle top-news__icon u-icon-small"></i>Cultura
+                            </a>
+                            <h1 class="top-news__title u-title u-text-overflow u-line-clamp2">
+                                <a href="#" class="u-white">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime! Lorem
+                                    ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime!
+                                </a>
+                            </h1>
+                        </div>
+                    </article>
+
+                    <!-- Top news -->
+                    <article class="top-news__wrapper u-shadow u-overflow">
+                        <a href="#" class="top-news__image">
+                            <img src="assets/img/teste3.jpg" alt="Imagem da noticia" class="u-img top-news__img">
+                        </a>
+                        <!-- Top news body -->
+                        <div class="top-news__body u-body">
+                            <a href="#" class="top-news__category u-category u-white">
+                                <i class="fa-solid fa-circle top-news__icon u-icon-small"></i>Cultura
+                            </a>
+                            <h1 class="top-news__title u-title u-text-overflow u-line-clamp2">
+                                <a href="#" class="u-white">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime! Lorem
+                                    ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime!
+                                </a>
+                            </h1>
+                        </div>
+                    </article>
+
+                    <!-- Top news -->
+                    <article class="top-news__wrapper u-shadow u-overflow">
+                        <a href="#" class="top-news__image">
+                            <img src="assets/img/teste3.jpg" alt="Imagem da noticia" class="u-img top-news__img">
+                        </a>
+                        <!-- Top news body -->
+                        <div class="top-news__body u-body">
+                            <a href="#" class="top-news__category u-category u-white">
+                                <i class="fa-solid fa-circle top-news__icon u-icon-small"></i>Cultura
+                            </a>
+                            <h1 class="top-news__title u-title u-text-overflow u-line-clamp2">
+                                <a href="#" class="u-white">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime! Lorem
+                                    ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime!
+                                </a>
+                            </h1>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <div class="news-by-category u-d-flex-column">
+                <!-- News card -->
+                <section class="news-card u-d-flex-column">
+                    <!-- News card header -->
+                    <div class="news-card__header">
+                        <h1 class="news-card__category">Religião</h1>
+                        <span class="news-card__line"></span>
+                    </div>
+
+                    <div class="news">
+                        <!-- News wrapper -->
+                        <article class="news___wrapper">
+                            <!-- News header -->
+                            <div class="news__header u-overflow">
+                                <a href="#" class="news__image">
+                                    <img src="assets/img/teste3.jpg" alt="Imagem da noticia" class="u-img news__img">
+                                </a>
+                                <a href="#" class="news__category u-category u-white">
+                                    <i class="fa-solid fa-circle news__icon u-icon-small"></i>Cultura
+                                </a>
+                            </div>
+                            <!-- News body -->
+                            <div class="news__body">
+                                <h1 class="news__title u-title u-text-overflow u-line-clamp2">
+                                    <a href="" class="u-black">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime! Lorem
+                                        ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime!
+                                    </a>
+                                </h1>
+                                <p class="news__description u-text-overflow u-line-clamp7">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt,
+                                    aspernatur tenetur, repellendus laudantium, ipsum beatae vero nam fuga.
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt,
+                                    aspernatur tenetur, repellendus laudantium, ipsum beatae vero nam fuga.
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt.
+                                </p>
+                            </div>
+                        </article>
+
+                        <!-- News wrapper -->
+                        <article class="news___wrapper">
+                            <!-- News header -->
+                            <div class="news__header u-overflow">
+                                <a href="#" class="news__image">
+                                    <img src="assets/img/teste3.jpg" alt="Imagem da noticia" class="u-img news__img">
+                                </a>
+                                <a href="#" class="news__category u-category u-white">
+                                    <i class="fa-solid fa-circle news__icon u-icon-small"></i>Cultura
+                                </a>
+                            </div>
+                            <!-- News body -->
+                            <div class="news__body">
+                                <h1 class="news__title u-title u-text-overflow u-line-clamp2">
+                                    <a href="" class="u-black">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime! Lorem
+                                        ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime!
+                                    </a>
+                                </h1>
+                                <p class="news__description u-text-overflow u-line-clamp7">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt,
+                                    aspernatur tenetur, repellendus laudantium, ipsum beatae vero nam fuga.
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt,
+                                    aspernatur tenetur, repellendus laudantium, ipsum beatae vero nam fuga.
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt.
+                                </p>
+                            </div>
+                        </article>
+
+                        <!-- News wrapper -->
+                        <article class="news___wrapper">
+                            <!-- News header -->
+                            <div class="news__header u-overflow">
+                                <a href="#" class="news__image">
+                                    <img src="assets/img/teste3.jpg" alt="Imagem da noticia" class="u-img news__img">
+                                </a>
+                                <a href="#" class="news__category u-category u-white">
+                                    <i class="fa-solid fa-circle news__icon u-icon-small"></i>Cultura
+                                </a>
+                            </div>
+                            <!-- News body -->
+                            <div class="news__body">
+                                <h1 class="news__title u-title u-text-overflow u-line-clamp2">
+                                    <a href="" class="u-black">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime! Lorem
+                                        ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime!
+                                    </a>
+                                </h1>
+                                <p class="news__description u-text-overflow u-line-clamp7">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt,
+                                    aspernatur tenetur, repellendus laudantium, ipsum beatae vero nam fuga.
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt,
+                                    aspernatur tenetur, repellendus laudantium, ipsum beatae vero nam fuga.
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt.
+                                </p>
+                            </div>
+                        </article>
+
+                        <!-- News wrapper -->
+                        <article class="news___wrapper">
+                            <!-- News header -->
+                            <div class="news__header u-overflow">
+                                <a href="#" class="news__image">
+                                    <img src="assets/img/teste3.jpg" alt="Imagem da noticia" class="u-img news__img">
+                                </a>
+                                <a href="#" class="news__category u-category u-white">
+                                    <i class="fa-solid fa-circle news__icon u-icon-small"></i>Cultura
+                                </a>
+                            </div>
+                            <!-- News body -->
+                            <div class="news__body">
+                                <h1 class="news__title u-title u-text-overflow u-line-clamp2">
+                                    <a href="" class="u-black">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime! Lorem
+                                        ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime!
+                                    </a>
+                                </h1>
+                                <p class="news__description u-text-overflow u-line-clamp7">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt,
+                                    aspernatur tenetur, repellendus laudantium, ipsum beatae vero nam fuga.
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt,
+                                    aspernatur tenetur, repellendus laudantium, ipsum beatae vero nam fuga.
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- News card -->
+                <section class="news-card u-d-flex-column">
+                    <!-- News card header -->
+                    <div class="news-card__header">
+                        <h1 class="news-card__category">Cultura</h1>
+                        <span class="news-card__line"></span>
+                    </div>
+
+                    <div class="news">
+                        <!-- News wrapper -->
+                        <article class="news___wrapper">
+                            <!-- News header -->
+                            <div class="news__header u-overflow">
+                                <a href="#" class="news__image">
+                                    <img src="assets/img/teste3.jpg" alt="Imagem da noticia" class="u-img news__img">
+                                </a>
+                                <a href="#" class="news__category u-category u-white">
+                                    <i class="fa-solid fa-circle news__icon u-icon-small"></i>Cultura
+                                </a>
+                            </div>
+                            <!-- News body -->
+                            <div class="news__body">
+                                <h1 class="news__title u-title u-text-overflow u-line-clamp2">
+                                    <a href="" class="u-black">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime! Lorem
+                                        ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime!
+                                    </a>
+                                </h1>
+                                <p class="news__description u-text-overflow u-line-clamp7">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt,
+                                    aspernatur tenetur, repellendus laudantium, ipsum beatae vero nam fuga.
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt,
+                                    aspernatur tenetur, repellendus laudantium, ipsum beatae vero nam fuga.
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt.
+                                </p>
+                            </div>
+                        </article>
+
+                        <!-- News wrapper -->
+                        <article class="news___wrapper">
+                            <!-- News header -->
+                            <div class="news__header u-overflow">
+                                <a href="#" class="news__image">
+                                    <img src="assets/img/teste3.jpg" alt="Imagem da noticia" class="u-img news__img">
+                                </a>
+                                <a href="#" class="news__category u-category u-white">
+                                    <i class="fa-solid fa-circle news__icon u-icon-small"></i>Cultura
+                                </a>
+                            </div>
+                            <!-- News body -->
+                            <div class="news__body">
+                                <h1 class="news__title u-title u-text-overflow u-line-clamp2">
+                                    <a href="" class="u-black">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime! Lorem
+                                        ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime!
+                                    </a>
+                                </h1>
+                                <p class="news__description u-text-overflow u-line-clamp7">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt,
+                                    aspernatur tenetur, repellendus laudantium, ipsum beatae vero nam fuga.
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt,
+                                    aspernatur tenetur, repellendus laudantium, ipsum beatae vero nam fuga.
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt.
+                                </p>
+                            </div>
+                        </article>
+
+                        <!-- News wrapper -->
+                        <article class="news___wrapper">
+                            <!-- News header -->
+                            <div class="news__header u-overflow">
+                                <a href="#" class="news__image">
+                                    <img src="assets/img/teste3.jpg" alt="Imagem da noticia" class="u-img news__img">
+                                </a>
+                                <a href="#" class="news__category u-category u-white">
+                                    <i class="fa-solid fa-circle news__icon u-icon-small"></i>Cultura
+                                </a>
+                            </div>
+                            <!-- News body -->
+                            <div class="news__body">
+                                <h1 class="news__title u-title u-text-overflow u-line-clamp2">
+                                    <a href="" class="u-black">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime! Lorem
+                                        ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime!
+                                    </a>
+                                </h1>
+                                <p class="news__description u-text-overflow u-line-clamp7">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt,
+                                    aspernatur tenetur, repellendus laudantium, ipsum beatae vero nam fuga.
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt,
+                                    aspernatur tenetur, repellendus laudantium, ipsum beatae vero nam fuga.
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt.
+                                </p>
+                            </div>
+                        </article>
+
+                        <!-- News wrapper -->
+                        <article class="news___wrapper">
+                            <!-- News header -->
+                            <div class="news__header u-overflow">
+                                <a href="#" class="news__image">
+                                    <img src="assets/img/teste3.jpg" alt="Imagem da noticia" class="u-img news__img">
+                                </a>
+                                <a href="#" class="news__category u-category u-white">
+                                    <i class="fa-solid fa-circle news__icon u-icon-small"></i>Cultura
+                                </a>
+                            </div>
+                            <!-- News body -->
+                            <div class="news__body">
+                                <h1 class="news__title u-title u-text-overflow u-line-clamp2">
+                                    <a href="" class="u-black">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime! Lorem
+                                        ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime!
+                                    </a>
+                                </h1>
+                                <p class="news__description u-text-overflow u-line-clamp7">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt,
+                                    aspernatur tenetur, repellendus laudantium, ipsum beatae vero nam fuga.
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt,
+                                    aspernatur tenetur, repellendus laudantium, ipsum beatae vero nam fuga.
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- News card -->
+                <section class="news-card u-d-flex-column">
+                    <!-- News card header -->
+                    <div class="news-card__header">
+                        <h1 class="news-card__category">Política</h1>
+                        <span class="news-card__line"></span>
+                    </div>
+
+                    <div class="news">
+                        <!-- News wrapper -->
+                        <article class="news___wrapper">
+                            <!-- News header -->
+                            <div class="news__header u-overflow">
+                                <a href="#" class="news__image">
+                                    <img src="assets/img/teste3.jpg" alt="Imagem da noticia" class="u-img news__img">
+                                </a>
+                                <a href="#" class="news__category u-category u-white">
+                                    <i class="fa-solid fa-circle news__icon u-icon-small"></i>Cultura
+                                </a>
+                            </div>
+                            <!-- News body -->
+                            <div class="news__body">
+                                <h1 class="news__title u-title u-text-overflow u-line-clamp2">
+                                    <a href="" class="u-black">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime! Lorem
+                                        ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime!
+                                    </a>
+                                </h1>
+                                <p class="news__description u-text-overflow u-line-clamp7">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt,
+                                    aspernatur tenetur, repellendus laudantium, ipsum beatae vero nam fuga.
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt,
+                                    aspernatur tenetur, repellendus laudantium, ipsum beatae vero nam fuga.
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt.
+                                </p>
+                            </div>
+                        </article>
+
+                        <!-- News wrapper -->
+                        <article class="news___wrapper">
+                            <!-- News header -->
+                            <div class="news__header u-overflow">
+                                <a href="#" class="news__image">
+                                    <img src="assets/img/teste3.jpg" alt="Imagem da noticia" class="u-img news__img">
+                                </a>
+                                <a href="#" class="news__category u-category u-white">
+                                    <i class="fa-solid fa-circle news__icon u-icon-small"></i>Cultura
+                                </a>
+                            </div>
+                            <!-- News body -->
+                            <div class="news__body">
+                                <h1 class="news__title u-title u-text-overflow u-line-clamp2">
+                                    <a href="" class="u-black">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime! Lorem
+                                        ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime!
+                                    </a>
+                                </h1>
+                                <p class="news__description u-text-overflow u-line-clamp7">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt,
+                                    aspernatur tenetur, repellendus laudantium, ipsum beatae vero nam fuga.
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt,
+                                    aspernatur tenetur, repellendus laudantium, ipsum beatae vero nam fuga.
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt.
+                                </p>
+                            </div>
+                        </article>
+
+                        <!-- News wrapper -->
+                        <article class="news___wrapper">
+                            <!-- News header -->
+                            <div class="news__header u-overflow">
+                                <a href="#" class="news__image">
+                                    <img src="assets/img/teste3.jpg" alt="Imagem da noticia" class="u-img news__img">
+                                </a>
+                                <a href="#" class="news__category u-category u-white">
+                                    <i class="fa-solid fa-circle news__icon u-icon-small"></i>Cultura
+                                </a>
+                            </div>
+                            <!-- News body -->
+                            <div class="news__body">
+                                <h1 class="news__title u-title u-text-overflow u-line-clamp2">
+                                    <a href="" class="u-black">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime! Lorem
+                                        ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime!
+                                    </a>
+                                </h1>
+                                <p class="news__description u-text-overflow u-line-clamp7">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt,
+                                    aspernatur tenetur, repellendus laudantium, ipsum beatae vero nam fuga.
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt,
+                                    aspernatur tenetur, repellendus laudantium, ipsum beatae vero nam fuga.
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt.
+                                </p>
+                            </div>
+                        </article>
+
+                        <!-- News wrapper -->
+                        <article class="news___wrapper">
+                            <!-- News header -->
+                            <div class="news__header u-overflow">
+                                <a href="#" class="news__image">
+                                    <img src="assets/img/teste3.jpg" alt="Imagem da noticia" class="u-img news__img">
+                                </a>
+                                <a href="#" class="news__category u-category u-white">
+                                    <i class="fa-solid fa-circle news__icon u-icon-small"></i>Cultura
+                                </a>
+                            </div>
+                            <!-- News body -->
+                            <div class="news__body">
+                                <h1 class="news__title u-title u-text-overflow u-line-clamp2">
+                                    <a href="" class="u-black">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime! Lorem
+                                        ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime!
+                                    </a>
+                                </h1>
+                                <p class="news__description u-text-overflow u-line-clamp7">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt,
+                                    aspernatur tenetur, repellendus laudantium, ipsum beatae vero nam fuga.
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt,
+                                    aspernatur tenetur, repellendus laudantium, ipsum beatae vero nam fuga.
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- News card -->
+                <section class="news-card u-d-flex-column">
+                    <!-- News card header -->
+                    <div class="news-card__header">
+                        <h1 class="news-card__category">Economía</h1>
+                        <span class="news-card__line"></span>
+                    </div>
+
+                    <div class="news">
+                        <!-- News wrapper -->
+                        <article class="news___wrapper">
+                            <!-- News header -->
+                            <div class="news__header u-overflow">
+                                <a href="#" class="news__image">
+                                    <img src="assets/img/teste3.jpg" alt="Imagem da noticia" class="u-img news__img">
+                                </a>
+                                <a href="#" class="news__category u-category u-white">
+                                    <i class="fa-solid fa-circle news__icon u-icon-small"></i>Cultura
+                                </a>
+                            </div>
+                            <!-- News body -->
+                            <div class="news__body">
+                                <h1 class="news__title u-title u-text-overflow u-line-clamp2">
+                                    <a href="" class="u-black">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime! Lorem
+                                        ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime!
+                                    </a>
+                                </h1>
+                                <p class="news__description u-text-overflow u-line-clamp7">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt,
+                                    aspernatur tenetur, repellendus laudantium, ipsum beatae vero nam fuga.
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt,
+                                    aspernatur tenetur, repellendus laudantium, ipsum beatae vero nam fuga.
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt.
+                                </p>
+                            </div>
+                        </article>
+
+                        <!-- News wrapper -->
+                        <article class="news___wrapper">
+                            <!-- News header -->
+                            <div class="news__header u-overflow">
+                                <a href="#" class="news__image">
+                                    <img src="assets/img/teste3.jpg" alt="Imagem da noticia" class="u-img news__img">
+                                </a>
+                                <a href="#" class="news__category u-category u-white">
+                                    <i class="fa-solid fa-circle news__icon u-icon-small"></i>Cultura
+                                </a>
+                            </div>
+                            <!-- News body -->
+                            <div class="news__body">
+                                <h1 class="news__title u-title u-text-overflow u-line-clamp2">
+                                    <a href="" class="u-black">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime! Lorem
+                                        ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime!
+                                    </a>
+                                </h1>
+                                <p class="news__description u-text-overflow u-line-clamp7">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt,
+                                    aspernatur tenetur, repellendus laudantium, ipsum beatae vero nam fuga.
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt,
+                                    aspernatur tenetur, repellendus laudantium, ipsum beatae vero nam fuga.
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt.
+                                </p>
+                            </div>
+                        </article>
+
+                        <!-- News wrapper -->
+                        <article class="news___wrapper">
+                            <!-- News header -->
+                            <div class="news__header u-overflow">
+                                <a href="#" class="news__image">
+                                    <img src="assets/img/teste3.jpg" alt="Imagem da noticia" class="u-img news__img">
+                                </a>
+                                <a href="#" class="news__category u-category u-white">
+                                    <i class="fa-solid fa-circle news__icon u-icon-small"></i>Cultura
+                                </a>
+                            </div>
+                            <!-- News body -->
+                            <div class="news__body">
+                                <h1 class="news__title u-title u-text-overflow u-line-clamp2">
+                                    <a href="" class="u-black">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime! Lorem
+                                        ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime!
+                                    </a>
+                                </h1>
+                                <p class="news__description u-text-overflow u-line-clamp7">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt,
+                                    aspernatur tenetur, repellendus laudantium, ipsum beatae vero nam fuga.
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt,
+                                    aspernatur tenetur, repellendus laudantium, ipsum beatae vero nam fuga.
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt.
+                                </p>
+                            </div>
+                        </article>
+
+                        <!-- News wrapper -->
+                        <article class="news___wrapper">
+                            <!-- News header -->
+                            <div class="news__header u-overflow">
+                                <a href="#" class="news__image">
+                                    <img src="assets/img/teste3.jpg" alt="Imagem da noticia" class="u-img news__img">
+                                </a>
+                                <a href="#" class="news__category u-category u-white">
+                                    <i class="fa-solid fa-circle news__icon u-icon-small"></i>Cultura
+                                </a>
+                            </div>
+                            <!-- News body -->
+                            <div class="news__body">
+                                <h1 class="news__title u-title u-text-overflow u-line-clamp2">
+                                    <a href="" class="u-black">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime! Lorem
+                                        ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime!
+                                    </a>
+                                </h1>
+                                <p class="news__description u-text-overflow u-line-clamp7">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt,
+                                    aspernatur tenetur, repellendus laudantium, ipsum beatae vero nam fuga.
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt,
+                                    aspernatur tenetur, repellendus laudantium, ipsum beatae vero nam fuga.
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, consectetur?
+                                    Quo minima vel itaque excepturi corporis ea dignissimos rerum amet incidunt.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="scroll-top">
+            <button type="button" class="u-btn scroll-top__btn u-white u-btn-hover" id="scroll-top-btn"
+                title="Ir para o topo">
+                <i class="fa-solid fa-arrow-up"></i>
+            </button>
+        </div>
+
+    </main>
+
+    <footer class="c-footer">
+        <div class="c-footer__wrapper-top u-d-flex-between u-gap-20">
+            <!-- Footer about -->
+            <div class="c-about u-d-flex-column u-gap-20">
+                <h1 class="c-about__title u-white">
+                    Sobre nós
+                </h1>
+
+                <!-- Footer logo -->
+                <div class="c-about__logo" id="menu-logo">
+                    <a href="">
+                        <img src="assets/img/Logitipo-white.png" alt="" class="u-img c-about__img">
+                    </a>
+                </div>
+
+                <p class="c-about__info u-white">
+                    Lorem ipsum dolor sit amet, consectetur <br>
+                    adipisicing elit. Quia id vel, voluptate <br> distinctio
+                    blanditiis ratione ea! Sit, optio <br>
+                    quasi. Deserunt tempore minus illo repellat <br>
+                    explicabo praesentium tenetur voluptates <br> cumque quis?
+                </p>
+            </div>
+
+            <!-- Menu footer -->
+            <nav class="c-menu c-menu--footer u-d-flex-column u-gap-20">
+                <h1 class="c-menu__title u-white">Navegação</h1>
+                <ul class="c-menu__list c-menu__list--footer">
+                    <li class="c-menu__item c-menu__item--footer">
+                        <a href="" class="c-menu__link c-menu__link--footer u-white">Home</a>
+                    </li>
+                    <li class="c-menu__item c-menu__item--footer">
+                        <a href="" class="c-menu__link c-menu__link--footer u-white">Religião</a>
+                    </li>
+                    <li class="c-menu__item c-menu__item--footer">
+                        <a href="" class="c-menu__link c-menu__link--footer u-white">Cultura</a>
+                    </li>
+                    <li class="c-menu__item c-menu__item--footer">
+                        <a href="" class="c-menu__link c-menu__link--footer u-white">Política</a>
+                    </li>
+                    <li class="c-menu__item c-menu__item--footer">
+                        <a href="" class="c-menu__link c-menu__link--footer u-white">Economía</a>
+                    </li>
+                    <li class="c-menu__item c-menu__item--footer">
+                        <a href="" class="c-menu__link c-menu__link--footer u-white">Sobre</a>
+                    </li>
+                    <li class="c-menu__item c-menu__item--footer">
+                        <a href="" class="c-menu__link c-menu__link--footer u-white">Cursos</a>
+                    </li>
+                    <li class="c-menu__item c-menu__item--footer">
+                        <a href="" class="c-menu__link c-menu__link--footer u-white">Contactos</a>
+                    </li>
+                    <li class="c-menu__item c-menu__item--footer">
+                        <a href="" class="c-menu__link c-menu__link--footer u-white">Termos</a>
+                    </li>
+                    <li class="c-menu__item c-menu__item--footer">
+                        <a href="" class="c-menu__link c-menu__link--footer u-white">Políticas</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Menu footer -->
+            <nav class="c-menu c-menu--location u-d-flex-column u-gap-20">
+                <h1 class="c-menu__title u-white">Localização</h1>
+                <ul class="c-menu__list c-menu__list--location u-d-flex-column u-gap-20">
+                    <li class="c-menu__item c-menu__item--location">
+                        <a href="geo:37.7749,-122.4194" class="c-menu__link c-menu__link--location u-white u-d-flex">
+                            <i class="fa-solid fa-location-dot c-menu__icon"></i>
+                            Projecto nova vida rua 34
+                        </a>
+                    </li>
+                    <li class="c-menu__item c-menu__item--location">
+                        <a href="mailto:marcosfredericocalitas22@gmail.com"
+                            class="c-menu__link c-menu__link--location u-white u-d-flex">
+                            <i class="fa-solid fa-envelope c-menu__icon"></i>
+                            marcosfredericocalitas22@gmail.com
+                        </a>
+                    </li>
+                    <li class="c-menu__item c-menu__item--location">
+                        <a href="tel:940405495" class="c-menu__link c-menu__link--location u-white u-d-flex">
+                            <i class="fa-solid fa-phone c-menu__icon"></i>
+                            +244 940-461-790
+                        </a>
+                    </li>
+                    <li class="c-menu__item c-menu__item--location">
+                        <a href="tel:940405495" class="c-menu__link c-menu__link--location u-white u-d-flex">
+                            <i class="fa-solid fa-phone c-menu__icon"></i>
+                            +244 940-461-790
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Menu Social Medias -->
+            <nav class="c-menu c-menu--footer-s-media u-d-flex-column u-gap-20">
+                <h1 class="c-menu__title u-white">Siga-nos</h1>
+                <ul class="c-menu__list c-menu__list--footer-s-media u-d-flex-column u-gap-20">
+                    <li class="c-menu__item">
+                        <a href="#" class="c-menu__link c-menu__link--footer-s-media u-white u-d-flex">
+                            <i class="fa-brands fa-facebook c-menu__icon-s-media"></i>
+                            Facebook
+                        </a>
+                    </li>
+                    <li class="c-menu__item">
+                        <a href="#" class="c-menu__link c-menu__link--footer-s-media u-white u-d-flex">
+                            <i class="fa-brands fa-whatsapp c-menu__icon-s-media"></i>
+                            whatsApp
+                        </a>
+                    </li>
+                    <li class="c-menu__item">
+                        <a href="#" class="c-menu__link c-menu__link--footer-s-media u-white u-d-flex">
+                            <i class="fa-brands fa-youtube c-menu__icon-s-media"></i>
+                            YouTube
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="c-footer__wrapper-bottom u-d-flex">
+            <p class="c-footer__copyrigh u-white">&copy; Copyright 2023 Providências as Comunidades</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/addClassBy.js"></script>
+    <script src="assets/js/addClassByClick.js"></script>
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/scrollTop.js"></script>
+</body>
+
+</html>
